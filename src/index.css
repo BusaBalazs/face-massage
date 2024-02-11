@@ -38,15 +38,15 @@
   --font-size-avarage: 1rem;
   --font-size-avarage-200: 1.1rem;
   --font-size-medium: 1.25rem;
-  --font-size-title: 2rem;
   --font-size-subtitle: 1.5rem;
+  --font-size-title: clamp(1.1rem, -0.25rem + 3.333vw, 1.65rem);
   /* **BORDER-RADIUS** */
   --radius-100: 5px;
   --radius-600: 50px;
   --radius-900: 100px;
   /* **BOX SHADOWS** */
-  --shadow--200: 2px 2px 15px rgba(13, 13, 13, 0.539);
-  --shadow--300: 3px 3px 8px rgba(36, 22, 5, 0.736);
+  --shadow--200: 2px 2px 15px rgba(13, 13, 13, 0.53);
+  --shadow--300: 3px 3px 8px rgba(36, 22, 5, 0.35);
 }
 
 /*-------------------------------------------------------

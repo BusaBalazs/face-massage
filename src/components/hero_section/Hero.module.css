@@ -11,26 +11,14 @@
   text-align: center;
 }
 
-.hero-title {
-  font-size: var(--font-size-avarage-200);
+.hero-title-wrapper {
+  font-size: var(--font-size-title);
   padding: 0 1em;
   margin-bottom: 3em;
   font-weight: 800;
 }
 
-.hero-title h2 {
+.hero-title-wrapper h2 {
   color: var(--color-green);
   margin-bottom: 1em;
 }
-
-
-/* *****************************************************************
------- Width > 768px ------------------------------------------------*/
-
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: var(--font-size-title);
-  
-  }
-}
-
