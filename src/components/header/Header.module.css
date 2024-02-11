@@ -1,0 +1,220 @@
+header {
+  width: 100%;
+  padding: 1em 2em 1.5em 2em;
+  background-color: var(--color-braun);
+  border-top: 15px solid var(--color-braun-dark);
+}
+
+.contact-info {
+  display: none;
+}
+
+nav {
+  width: min(100%, 1200px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-avarage-200);
+  margin: auto;
+}
+
+.logo-text {
+  font-weight: 800;
+}
+
+/* ***************************************************************
+------ Mobile menu ------------------------------------------------*/
+.nav-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.nav-icon img {
+  color: var(--color-green);
+}
+
+.hidden {
+  display: none;
+}
+
+.show-mobile-menu {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 85px;
+  padding: 1em 1.5em;
+  background-color: var(--color-braun-dark);
+  border-radius: var(--radius-100);
+  box-shadow: var(--shadow--200);
+  animation: in 0.2s ease-out;
+}
+
+@keyframes in {
+  0% {
+    right: -40px;
+    opacity: 0;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+.nav-list-mobil {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--color-orange);
+  text-transform: capitalize;
+}
+
+.nav-list-mobil :last-child {
+  margin-bottom: 0.8em;
+}
+
+.contact-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: auto;
+  padding: 0.2em;
+  color: black;
+}
+
+.contact-info-content a {
+  color: var(--color-orange);
+}
+
+.contact-info-content small,
+.contact-info-content a {
+  text-align: left;
+  letter-spacing: 0;
+}
+
+/* *************************************************************
+------ Media ------------------------------------------------*/
+
+.nav-icon-mobil {
+  display: block;
+}
+
+.nav-list-medium {
+  display: none;
+}
+
+/* *****************************************************************
+------ Width 768px ------------------------------------------------*/
+
+@media (min-width: 768px) {
+  /* ------------------------------------------------------------
+  ---------- Contact info ----------------------------------------*/
+
+  .contact-info {
+    display: block;
+    width: 100%;
+    background-color: var(--color-braun-dark);
+    font-family: var(--secondary-font);
+  }
+
+  .contact-info-content {
+    width: min(90%, 1200px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0.2em;
+    color: black;
+  }
+
+  .contact-info-content a {
+    color: var(--color-orange);
+  }
+  .contact-info-content small,
+  .contact-info-content a {
+    letter-spacing: 0;
+  }
+
+  /* ------------------------------------------------------------
+  ---------- Header --------------------------------------------*/
+
+  header {
+    border-top: none;
+  }
+
+  /* ------------------------------------------------------------
+  ---------- Nav bar --------------------------------------------*/
+
+  nav {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 1.8em;
+    text-transform: capitalize;
+  }
+
+  .nav-list a:hover {
+    color: var(--color-green);
+  }
+
+  .nav-icon-mobil {
+    display: none;
+  }
+
+  .nav-list-medium {
+    display: block;
+  }
+
+  /* ------------------------------------------------------------
+  ---------- Logo -----------------------------------------------*/
+
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-decor-wrapper {
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    z-index: 0;
+  }
+
+  .logo-text {
+    color: var(--color-white);
+    letter-spacing: 0.15em;
+  }
+
+  .logo-decor {
+    width: 4px;
+    height: 20px;
+    background-color: var(--color-green);
+  }
+
+  .logo-decor-one {
+    height: 10px;
+    background-color: var(--color-green);
+  }
+  .logo-decor-two {
+    height: 30px;
+    background-color: var(--color-green);
+  }
+  .logo-decor-three {
+    height: 10px;
+    background-color: var(--color-green);
+  }
+}
+
+/* *****************************************************************
+------ Width 576px ------------------------------------------------*/
+
+@media (min-width: 576px) {
+  .logo-text {
+    font-size: var(--font-size-subtitle);
+  }
+}
