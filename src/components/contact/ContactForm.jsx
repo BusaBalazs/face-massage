@@ -91,7 +91,7 @@ const ContactForm = () => {
         phone={form.phone}
       />
       <div className={classes["contact-wrapper"]}>
-        <p className={classes["contact-title"]}>Visszahívom!</p>
+        <p className={classes["contact-title"]}>Visszahívást kérek!</p>
 
         {!formIsValis && (
           <p className={classes["alert"]}>

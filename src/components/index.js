@@ -1,9 +1,6 @@
-import Header from "./header/Header";
-import Hero from "./hero_section/Hero";
-import ContactForm from "./contact/ContactForm";
+import Header from "./header/Header.jsx";
+import Hero from "./hero_section/Hero.jsx";
+import ContactForm from "./contact/ContactForm.jsx";
+import Features from "./features/Features.jsx";
 
-export {
-  Header,
-  Hero,
-  ContactForm
-}
+export { Header, Hero, ContactForm, Features };
