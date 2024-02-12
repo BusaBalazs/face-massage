@@ -18,6 +18,10 @@ nav {
   margin: auto;
 }
 
+nav a {
+  color: var(--whie);
+}
+
 .logo-text {
   font-weight: 800;
 }
@@ -79,7 +83,6 @@ nav {
   gap: 0.5em;
   margin: auto;
   padding: 0.2em;
-  color: black;
 }
 
 .contact-info-content a {
@@ -125,15 +128,11 @@ nav {
     align-items: center;
     margin: auto;
     padding: 0.2em;
-    color: black;
+    color: var(--whie);
   }
 
   .contact-info-content a {
     color: var(--color-orange);
-  }
-  .contact-info-content small,
-  .contact-info-content a {
-    letter-spacing: 0;
   }
 
   /* ------------------------------------------------------------
@@ -186,8 +185,7 @@ nav {
   }
 
   .logo-text {
-    color: var(--color-white);
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
   }
 
   .logo-decor {

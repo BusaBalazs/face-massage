@@ -13,8 +13,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: .1rem;
-  color: var(--white);
+  letter-spacing: .03rem;
 }
 
 /*-------------------------------------------------------
@@ -31,12 +30,13 @@
   --background-green-lighter: linear-gradient(45deg, #278f80, #21ac9d);
   --gradient-white: linear-gradient(#ffffff, #d9d9d9);
   --white: rgb(243, 243, 243);
+  --transparent: #75635caf;
   /* **FONTS** */
-  --main-font: "Playfair Display", Arial, sans-serif;
+  --main-font: "Lato", Arial, sans-serif;
   --secondary-font: "Fauna One", Arial, sans-serif;
-  --font-size-small: .75rem;
-  --font-size-avarage: 1rem;
-  --font-size-avarage-200: 1.1rem;
+  --font-size-small: clamp(0.9rem, -0.25rem + 3.333vw, 1rem);
+  --font-size-avarage: clamp(1rem, -0.25rem + 3.333vw, 1.2rem);
+  --font-size-avarage-200: clamp(1.15rem, -0.25rem + 3.333vw, 1.25rem);
   --font-size-medium: 1.25rem;
   --font-size-subtitle: 1.5rem;
   --font-size-title: clamp(1.1rem, -0.25rem + 3.333vw, 1.65rem);
@@ -60,4 +60,8 @@ body {
   background-repeat: no-repeat;
   font-family: var(--main-font);
   color: var(--white);
+}
+
+input:focus {
+  outline: none;
 }

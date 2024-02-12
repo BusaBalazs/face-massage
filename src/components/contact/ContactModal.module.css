@@ -1,0 +1,69 @@
+.modal {
+  margin: 10rem auto;
+  padding: 2em;
+  color: var(--color-braun);
+  border-radius: var(--radius-100);
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+  font-weight: 700;
+}
+
+.modal-user-data {
+  font-size: var(--font-size-small);
+  margin: 3em 0;
+  text-align: left;
+}
+
+.modal-user-data :not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.modal-user-data ::after {
+  content: "";
+  position: absolute;
+  display: block;
+
+  height: 1px;
+  background-color: var(--color-braun);
+}
+
+.modal-user-data :first-child ::after {
+  width: 30px;
+}
+
+.modal-user-data :nth-child(2) ::after {
+  width: 46px;
+}
+
+.modal-user-data :nth-child(3) ::after {
+  width: 90px;
+}
+
+.modal-user-data span {
+  font-weight: 800;
+}
+
+.modal form {
+  display: flex;
+  gap: 0.5em;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cancel-btn {
+  background-color: transparent;
+}
+
+/* *****************************************************************
+------ Width > 768px ------------------------------------------------*/
+
+@media (min-width: 578px) {
+  .modal-user-data ::after {
+    display: none;
+  }
+}

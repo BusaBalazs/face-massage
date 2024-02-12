@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-
+import ContactModal from "./ContactModal";
 import classes from "./ContactForm.module.css";
 
 //------------------------------------------------------------
@@ -9,6 +9,7 @@ import classes from "./ContactForm.module.css";
 //------------------------------------------------------------
 const ContactForm = () => {
   const formRef = useRef();
+  const dialog = useRef();
   const [loading, setloading] = useState(false);
   const [formIsValis, setFormIsValid] = useState(true);
 
@@ -18,6 +19,7 @@ const ContactForm = () => {
     phone: "",
   });
 
+  //----------------------------------------------------------
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -29,18 +31,43 @@ const ContactForm = () => {
     });
   };
 
+  //----------------------------------------------------------
+  const handleModal = () => {
+    if (form.name.trim() === "" || form.phone.trim().length < 9) {
+      setFormIsValid(false);
+
+      setTimeout(() => {
+        setFormIsValid(true);
+      }, 3000);
+      return;
+    }
+
+    const isValidEmail = form.email
+      .split("")
+      .filter((letter) => letter === "@");
+    if (isValidEmail.length === 0) {
+      setFormIsValid(false);
+
+      setTimeout(() => {
+        setFormIsValid(true);
+      }, 3000);
+      return;
+    }
+
+    dialog.current.open();
+  };
+
+  //----------------------------------------------------------
+  const handleCancelModal = () => {
+    dialog.current.close();
+  };
+
+  //----------------------------------------------------------
   const handleSubmit = (e) => {
     e.preventDefault();
     setloading(true);
 
-    if (form.name.trim() === "") {
-      setFormIsValid(false);
-      setloading(false);
-      setTimeout(() => {
-        setFormIsValid(true);
-      }, 2000);
-      return;
-    }
+    console.log(form);
 
     setloading(false);
     setform({
@@ -48,49 +75,64 @@ const ContactForm = () => {
       email: "",
       phone: "",
     });
+
+    dialog.current.close();
   };
 
- 
   return (
-    <div className={classes["contact-wrapper"]}>
-      <p className={classes["contact-title"]}>Visszahívom!</p>
-      
-      {!formIsValis && (
-        <p className={classes["alert"]}>
-          Kérem ellenőrizze a megadott adatokat!
-        </p>
-      )}
-      <form ref={formRef} onSubmit={handleSubmit}>
-        <input
-          name="name"
-          type="text"
-          value={form.name}
-          onChange={handleChange}
-          required
-          placeholder="Név"
-        />
+    <>
+      <ContactModal
+        ref={dialog}
+        onSubmit={handleSubmit}
+        buttonText={loading ? "Küldés..." : "Rendben"}
+        onCancel={handleCancelModal}
+        name={form.name}
+        email={form.email}
+        phone={form.phone}
+      />
+      <div className={classes["contact-wrapper"]}>
+        <p className={classes["contact-title"]}>Visszahívom!</p>
 
-        <input
-          name="email"
-          type="email"
-          value={form.email}
-          onChange={handleChange}
-          placeholder="email@email"
-          required
-        />
+        {!formIsValis && (
+          <p className={classes["alert"]}>
+            Kérem ellenőrizze a megadott adatokat, a mezők kitöltése kötelező!
+          </p>
+        )}
+        <form ref={formRef} className={classes["input-form"]}>
+          <input
+            name="name"
+            type="text"
+            value={form.name}
+            onChange={handleChange}
+            required
+            placeholder="Név"
+          />
 
-        <input
-          name="phone"
-          type="number"
-          value={form.phone}
-          onChange={handleChange}
-          placeholder="Telefonszám"
-          required
-        />
+          <input
+            name="email"
+            type="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="email@email"
+            required
+          />
 
-        <button type="submit">{loading ? "Küldés..." : "Küldés"}</button>
-      </form>
-    </div>
+          <input
+            name="phone"
+            type="tel"
+            minLength="9"
+            value={form.phone}
+            onChange={handleChange}
+            placeholder="Telefonszám"
+            required
+          />
+
+          <button type="button" onClick={handleModal}>
+            Küldés
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

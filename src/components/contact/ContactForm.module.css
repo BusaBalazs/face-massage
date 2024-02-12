@@ -5,32 +5,33 @@
   border-radius: var(--radius-100);
   background-color: var(--color-braun-dark);
   box-shadow: var(--shadow--300);
+  opacity: .9;
 }
 
 .contact-title {
-  font-size: var(--font-size-avarage-200);
+  font-size: var(--font-size-avarage);
   margin: 1em 0 2em 0;
   color: var(--color-green);
-  font-weight: 800;
+  font-weight: 900;
 }
 
-form {
+.input-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: var(--secondary-font);
 }
 
-form input {
-  background-color: var(--color-braun);
+.input-form input {
+  background-color: var(--transparent);
   font-size: var(--font-size-avarage);
   padding: 0.5em 0.5em;
   margin-bottom: 1.5em;
   width: min(90%, 450px);
+  color: var(--whie);
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.337) inset;
 }
 
-form :first-child {
+.input-form :first-child {
   text-transform: capitalize;
 }
 
@@ -38,28 +39,31 @@ button {
   width: fit-content;
   font-size: var(--font-size-avarage-200);
   background-color: var(--color-green);
+  font-weight: 900;
   padding: 0.5em 1.3em;
   margin: 1em auto;
-  color: black;
+  color: var(--color-braun-dark);
   border-radius: var(--radius-100);
+  cursor: pointer;
 }
 
 .alert {
   color: rgb(255, 106, 87);
 }
+
 /* *****************************************************************
 ------ Width > 768px ------------------------------------------------*/
 
 @media (min-width: 768px) {
 
 
-  form {
+  .input-form {
     flex-direction: row;
     justify-content: center;
     gap: 1em;
   }
 
-  form input {
+  .input-form input {
     margin-bottom: 0;
   }
 
