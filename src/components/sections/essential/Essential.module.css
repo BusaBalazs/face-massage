@@ -1,0 +1,12 @@
+.essential-section {
+  width: 100%;
+  background-color: var(--color-green);
+  background-image: url("../../../assets/ornamental.svg");
+  background-blend-mode: overlay;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}

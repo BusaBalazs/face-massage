@@ -1,0 +1,13 @@
+.advantage-section {
+  background-color: rgb(244, 243, 236);
+  background-image: url("../../../assets/flora.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}

@@ -1,17 +1,24 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { Header, Hero, Features } from "./components";
+import { Header, Hero, Features, Essential, Advantage,Introduce } from "./components";
+
 
 //-------------------------------------------------------------
 //-------------------------------------------------------------
 //-------------------------------------------------------------
 const App = () => {
-  return <BrowserRouter>
-    <Header />
-    <Hero />
-    <Features />
-  </BrowserRouter>;
+  return (
+    <BrowserRouter>
+      <main>
+        <Header />
+        <Hero />
+        <Features />
+        <Essential />
+        <Advantage />
+      </main>
+    </BrowserRouter>
+  );
 };
 
 export default App;

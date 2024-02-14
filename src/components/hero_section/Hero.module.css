@@ -12,13 +12,19 @@
 }
 
 .hero-title-wrapper {
-  font-size: var(--font-size-title);
+ 
   padding: 0 1em;
   margin-bottom: 3em;
   font-weight: 800;
 }
 
 .hero-title-wrapper h2 {
+  font-size: var(--font-size-title);
   color: var(--color-green);
   margin-bottom: 1em;
+}
+
+.hero-title-wrapper h1 {
+  font-size: var(--font-size-title);
+  font-weight: 900;
 }

@@ -13,7 +13,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
+
+  scroll-behavior: smooth;
 }
 
 /*-------------------------------------------------------
@@ -26,11 +28,10 @@
   --color-braun-img: #7e7e7e;
   --color-braun-dark: #3e342f;
   --color-green: #b0dd00;
+  --color-green-dark: #a5cf00;
   --color-orange: #f7dc81;
-  --background-green-lighter: linear-gradient(45deg, #278f80, #21ac9d);
-  --gradient-white: linear-gradient(#ffffff, #d9d9d9);
+  --gradient-white: linear-gradient(to top, #ffffff, #fbe5e5);
   --white: rgb(243, 243, 243);
-  --transparent: #75635caf;
   /* **FONTS** */
   --main-font: "Lato", Arial, sans-serif;
   --secondary-font: "Fauna One", Arial, sans-serif;
@@ -38,8 +39,8 @@
   --font-size-avarage: clamp(1rem, -0.25rem + 3.333vw, 1.2rem);
   --font-size-avarage-200: clamp(1.15rem, -0.25rem + 3.333vw, 1.25rem);
   --font-size-medium: 1.25rem;
-  --font-size-subtitle: 1.5rem;
-  --font-size-title: clamp(1.1rem, -0.25rem + 3.333vw, 1.65rem);
+  --font-size-subtitle: clamp(1.4rem, -0.25rem + 3.333vw, 1.6rem);
+  --font-size-title: clamp(1.6rem, -0.25rem + 3.333vw, 3rem);
   /* **BORDER-RADIUS** */
   --radius-100: 5px;
   --radius-600: 50px;
@@ -54,14 +55,46 @@
 ---------------------------------------------------------*/
 
 body {
-  width: 100vw;
-  height: 100vh;
-  background-image: var(--gradient-white);
-  background-repeat: no-repeat;
   font-family: var(--main-font);
   color: var(--white);
 }
 
+.hoc {
+  margin: -1.2em;
+  padding: 0;
+}
+
 input:focus {
   outline: none;
+}
+
+.sections-paragraphe {
+  font-size: var(--font-size-avarage-200);
+  font-family: var(--secondary-font);
+}
+
+.sections-paragraphe::first-letter {
+  font-size: larger;
+}
+
+.sections-wrapper {
+  width: min(80%, 1000px);
+  margin: auto;
+  padding: 6em 0;
+  color: var(--color-braun);
+}
+
+.sections-title {
+  font-size: var(--font-size-title);
+  font-weight: 800;
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+/* *****************************************************************
+------ Width > 768px ------------------------------------------------*/
+@media (min-width: 768px) {
+  .section-wrapper {
+    padding: 10em 1em;
+  }
 }
