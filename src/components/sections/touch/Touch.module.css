@@ -1,0 +1,60 @@
+.touch-section {
+  background: var(--gradient-white);
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
+
+.content:not(:last-child) {
+  margin: 5em 0;
+}
+
+.content:nth-child(even) {
+  text-align: right;
+}
+
+.content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: -1;
+  border-radius: var(--radius-200);
+  box-shadow: var(--shadow--300);
+}
+
+.content:nth-child(odd)::after {
+  left: -90px;
+  background-color: var(--color-green);
+}
+
+.content:nth-child(even)::after {
+  right: -90px;
+  background-color: var(--color-orange);
+}
+
+.title-center {
+  font-size: var(--font-size-title);
+  font-weight: 800;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.content h3 {
+  font-size: var(--font-size-subtitle);
+  color: var(--color-green-dark);
+}
+
+.content:nth-child(even) h3 {
+  color: var(--color-orange);
+}
+
+.content p {
+  font-size: var(--font-size-avarage-200);
+  font-family: var(--secondary-font);
+  margin-top: 0.5em;
+}

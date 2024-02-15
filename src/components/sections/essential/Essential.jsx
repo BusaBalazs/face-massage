@@ -12,7 +12,7 @@ import { essential } from "../../../constants";
 
 const Essential = () => {
   return (
-    <div className={classes["essential-section"]}>
+    <div className="section-green">
       <div className={"sections-wrapper"}>
         <motion.h2
           className="sections-title"

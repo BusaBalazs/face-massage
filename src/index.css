@@ -29,8 +29,8 @@
   --color-braun-dark: #3e342f;
   --color-green: #b0dd00;
   --color-green-dark: #a5cf00;
-  --color-orange: #f7dc81;
-  --gradient-white: linear-gradient(to top, #ffffff, #fbe5e5);
+  --color-orange: #dcb871;
+  --gradient-white: linear-gradient(to top, #ffffff, #fbf9e5);
   --white: rgb(243, 243, 243);
   /* **FONTS** */
   --main-font: "Lato", Arial, sans-serif;
@@ -38,16 +38,16 @@
   --font-size-small: clamp(0.9rem, -0.25rem + 3.333vw, 1rem);
   --font-size-avarage: clamp(1rem, -0.25rem + 3.333vw, 1.2rem);
   --font-size-avarage-200: clamp(1.15rem, -0.25rem + 3.333vw, 1.25rem);
-  --font-size-medium: 1.25rem;
+  --font-size-medium: 1.6rem;
   --font-size-subtitle: clamp(1.4rem, -0.25rem + 3.333vw, 1.6rem);
   --font-size-title: clamp(1.6rem, -0.25rem + 3.333vw, 3rem);
   /* **BORDER-RADIUS** */
   --radius-100: 5px;
+  --radius-200: 15px;
   --radius-600: 50px;
-  --radius-900: 100px;
   /* **BOX SHADOWS** */
   --shadow--200: 2px 2px 15px rgba(13, 13, 13, 0.53);
-  --shadow--300: 3px 3px 8px rgba(36, 22, 5, 0.35);
+  --shadow--300: 3px 3px 6px rgba(36, 22, 5, 0.35);
 }
 
 /*-------------------------------------------------------
@@ -67,6 +67,9 @@ body {
 input:focus {
   outline: none;
 }
+
+/* *****************************************************************
+------ Defaukt section styles ------------------------------------------------*/
 
 .sections-paragraphe {
   font-size: var(--font-size-avarage-200);
@@ -89,6 +92,13 @@ input:focus {
   font-weight: 800;
   margin-bottom: 2em;
   text-align: left;
+}
+
+.section-green {
+  width: 100%;
+  background-color: var(--color-green);
+  background-image: url("./assets/ornamental.svg");
+  background-blend-mode: overlay;
 }
 
 /* *****************************************************************

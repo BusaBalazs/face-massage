@@ -27,10 +27,6 @@ export const features = [
     id: "touch",
   },
   {
-    title: "Kinek nem Ajánlott...",
-    id: "not",
-  },
-  {
     title: 'A masszázs “házhoz megy"...',
     id: "go",
   },
@@ -54,7 +50,7 @@ export const advantage = {
 };
 
 export const touch = {
-  title: "Az érintés jótékony hatásai:",
+  title: "Az érintés jótékony hatásai",
   items: [
     {
       subTitle: "Stresszoldás",

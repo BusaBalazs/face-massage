@@ -22,7 +22,7 @@
 }
 
 .input-form input {
-  background-color: var(--transparent);
+  background-color: var(--color-braun);
   font-size: var(--font-size-avarage);
   padding: 0.5em 0.5em;
   margin-bottom: 1.5em;

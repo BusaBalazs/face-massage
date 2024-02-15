@@ -1,0 +1,33 @@
+.go-content{
+  position: relative;
+  z-index: 20;
+}
+
+.go-content:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+.go-content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  width: 45%;
+  height: 15px;
+  right: 0;
+  z-index: -1;
+  background-color: var(--white);
+  border-radius: var(--radius-100);
+  opacity: .5;
+}
+
+.go-content h3 {
+  font-size: var(--font-size-subtitle);
+}
+
+.go-content p {
+  font-size: var(--font-size-avarage-200);
+  font-family: var(--secondary-font);
+  margin-top: 0.5em;
+}
