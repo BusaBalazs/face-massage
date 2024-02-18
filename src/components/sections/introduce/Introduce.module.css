@@ -1,6 +1,25 @@
-.introduce-wrapper {
-  height: 300px;
-  background-color: var(--color-green);
-  background-image: url("../../../assets/ornamental.svg");
-  background-blend-mode: overlay;
+.introduce-section {
+  background-color: rgb(244, 243, 236);
+  background-image: url("../../../assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.portre-img {
+  width: min(100%, 500px);
+  margin-top: 3em;
+  border-radius: var(--radius-100);
+  box-shadow: var(--shadow--200);
+}
+
+/* *****************************************************************
+------ Width > 768px ------------------------------------------------*/
+@media (min-width: 768px) {
+  
 }

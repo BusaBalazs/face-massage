@@ -4,22 +4,7 @@
 }
 
 .go-content:not(:last-child) {
-  margin-bottom: 3em;
-}
-
-.go-content::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 15px;
-  left: -5px;
-  width: 45%;
-  height: 15px;
-  right: 0;
-  z-index: -1;
-  background-color: var(--white);
-  border-radius: var(--radius-100);
-  opacity: .5;
+  margin-bottom: 5em;
 }
 
 .go-content h3 {

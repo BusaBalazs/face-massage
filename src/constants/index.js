@@ -102,3 +102,13 @@ export const go = {
   },
  ]
 };
+
+export const introduce = {
+  title: "Bemutatkozás",
+  description: [
+    "Gyermekkorom óta vonzódom a hagyományokhoz és a távol-keleti kultúrához, melyek mindig fontos szerepet játszottak az életemben.",
+    "A távol-keleti kultúra sokoldalúsága és a testi-lelki egyensúly fontossága mindig is inspirált.",
+    "A keleti filozófiát követve hiszem, hogy az arcmasszázs nemcsak a ráncok simításáról szól, hanem az energiaáramlások egyensúlyba hozásáról és a belső béke megteremtéséről is.",
+    "A szépség és az egészség egyensúlyának megteremtése céljából életem új korszakába léptem, és remélem, hogy veletek is megoszthatom ezt a csodálatos utazást. Köszönöm, hogy velem tartotok!"
+  ],
+};

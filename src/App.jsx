@@ -18,6 +18,7 @@ const App = () => {
         <Advantage />
         <Touch />
         <Go />
+        <Introduce />
       </main>
     </BrowserRouter>
   );
