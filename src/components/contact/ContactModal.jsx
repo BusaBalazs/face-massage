@@ -23,6 +23,7 @@ const ContactModal = forwardRef(
       <dialog ref={dialog} className={classes.modal}>
         <div className={classes["modal-greating"]}>
           <h3>Köszönöm az érdeklődését!</h3>
+          <p>Az adatok elleneőrzése után, a "Rendben" gombal véglegesítheti az üzenet küldést.</p>
           <p>Amint lehetséges felszem Önnel a kapcsolatot.</p>
         </div>
         <div className={classes["modal-content-wrapper"]}>

@@ -35,30 +35,8 @@ const FeaturesCard = ({ title, id, index, delay }) => {
 //-------------------------------------------------------
 //-------------------------------------------------------
 
-const Features = () => {
-  const [isMobile, setIsMobile] = useState();
-
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQuery = (e) => {
-      setIsMobile(mediaQuery.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQuery);
-
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQuery);
-    };
-  }, []);
-
+const Features = ({isMobile}) => {
+  
   const delay = (index) => {
     return isMobile ? 0.5 : 0.3 * index;
   };

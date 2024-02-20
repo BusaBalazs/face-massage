@@ -20,23 +20,25 @@ const Introduce = () => {
         >
           {introduce.title}
         </motion.h2>
-        <div className={classes["description"]}>
-          {introduce.description.map((content, index) => (
-            <motion.p
-              key={index}
-              className="sections-paragraphe"
-              variants={fadeIn("left", 0.5 * (index + 1), 1)}
-            >
-              {content}
-            </motion.p>
-          ))}
+        <div className={classes["introduce-content-wrapper"]}>
+          <div className={classes["description"]}>
+            {introduce.description.map((content, index) => (
+              <motion.p
+                key={index}
+                className="sections-paragraphe"
+                variants={fadeIn("left", 0.5 * (index + 1), 1)}
+              >
+                {content}
+              </motion.p>
+            ))}
+          </div>
+          <motion.img
+            src={introduceImg}
+            alt="portre of Simko-Nagy Tamás"
+            variants={fadeIn("right", 0.3, 1)}
+            className={classes["portre-img"]}
+          />
         </div>
-        <motion.img
-          src={introduceImg}
-          alt="portre of Simko-Nagy Tamás"
-          variants={fadeIn("right", 0.3, 1)}
-          className={classes["portre-img"]}
-        />
       </div>
     </div>
   );

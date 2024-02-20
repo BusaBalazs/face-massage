@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 import { motion } from "framer-motion";
 
 import SectionWrapper from "../../hoc";
 import { fadeIn } from "../../../utils/motion";
 
 import { go } from "../../../constants";
-import classes from "./Go.module.css"
+
+import classes from "./Go.module.css";
 //-----------------------------------------------------
 //-----------------------------------------------------
 //-----------------------------------------------------
@@ -33,7 +34,7 @@ const Go = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Go, "go")
+export default SectionWrapper(Go, "go");

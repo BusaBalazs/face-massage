@@ -1,0 +1,56 @@
+footer {
+  padding: 2em;
+}
+
+.footer-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  color: var(--color-braun);
+  margin-bottom: .5em;
+}
+
+/* ------------------------------------------------------------
+  ---------- Logo -----------------------------------------------*/
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-decor-wrapper {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  z-index: 0;
+}
+
+.logo-text {
+  letter-spacing: 0.1em;
+}
+
+.logo-decor {
+  width: 4px;
+  height: 20px;
+  background-color: var(--color-green);
+}
+
+.logo-decor-one {
+  height: 10px;
+  background-color: var(--color-green);
+}
+.logo-decor-two {
+  height: 30px;
+  background-color: var(--color-green);
+}
+.logo-decor-three {
+  height: 10px;
+  background-color: var(--color-green);
+}
+
+
+.social-media-logo {
+  width: 30px;
+}

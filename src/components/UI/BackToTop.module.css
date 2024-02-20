@@ -1,0 +1,68 @@
+.to-top-hide {
+  display: none;
+}
+/* The value of position is handle by javascript: fixed or static */
+.to-top-show {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  bottom: 0px;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: var(--color-green-dark);
+  color: var(--white);
+  box-shadow: var(--shadow--300), 1px 1px 5px rgba(229, 255, 208, 0.762) inset;
+  z-index: 25;
+}
+
+.callback-img {
+  width: 30px;
+}
+
+/* *****************************************************************
+------ Width > 768px ------------------------------------------------*/
+@media (min-width: 768px) {
+  .to-top-show {
+    width: fit-content;
+    flex-direction: column;
+    position: fixed;
+    bottom: 20%;
+    right: 5px;
+    border-radius: var(--radius-600);
+  }
+
+  .content-wrapper {
+    overflow: hidden;
+    width: 65px;
+    transition: all 0.5s ease-out;
+  }
+
+  .text {
+    position: absolute;
+    right: -180px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .callback-img {
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+  }
+
+  .content-wrapper:hover {
+    width: 235px;
+  }
+
+  .content-wrapper:hover .text {
+    display: block;
+    right: 30px;
+    opacity: 1;
+  }
+
+  .content-wrapper:hover .callback-img {
+    opacity: 0;
+  }
+}

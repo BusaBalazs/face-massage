@@ -4,10 +4,6 @@ export const navLinks = [
     title: "bemutatkozás",
   },
   {
-    id: "contact",
-    title: "kapcsolat",
-  },
-  {
     id: "price",
     title: "árak",
   },
