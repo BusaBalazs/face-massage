@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import {
@@ -46,15 +46,15 @@ const App = () => {
       <main>
         <Header />
         <Hero />
-        <Features isMobile={isMobile}/>
+        <Features isMobile={isMobile} />
         <Essential />
         <Advantage />
         <Touch />
         <Go />
         <Introduce />
-        <BackToTop isMobile={isMobile}/>
+        <BackToTop isMobile={isMobile} />
       </main>
-        <Footer />
+      <Footer />
     </BrowserRouter>
   );
 };
