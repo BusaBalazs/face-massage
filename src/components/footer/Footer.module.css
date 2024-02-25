@@ -1,5 +1,7 @@
 footer {
   padding: 2em;
+  background-color: var(--color-braun);
+  
 }
 
 .footer-date {
@@ -9,6 +11,7 @@ footer {
   gap: 1em;
   color: var(--color-braun);
   margin-bottom: .5em;
+  color: var(--white);
 }
 
 /* ------------------------------------------------------------
@@ -29,6 +32,7 @@ footer {
 
 .logo-text {
   letter-spacing: 0.1em;
+  color: var(--white);
 }
 
 .logo-decor {

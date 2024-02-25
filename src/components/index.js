@@ -7,6 +7,7 @@ import Advantage from "./sections/advantage/Advantage.jsx";
 import Touch from "./sections/touch/Touch.jsx";
 import Go from "./sections/go/Go.jsx";
 import Introduce from "./sections/introduce/Introduce.jsx";
+import Prices from "./sections/prices/Prices.jsx";
 import BackToTop from "./UI/BackToTop.jsx";
 import Footer from "./footer/Footer.jsx";
 
@@ -20,6 +21,7 @@ export {
   Touch,
   Go,
   Introduce,
+  Prices,
   BackToTop,
   Footer,
 };

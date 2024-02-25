@@ -10,6 +10,7 @@ import {
   Touch,
   Go,
   Introduce,
+  Prices,
   BackToTop,
   Footer,
 } from "./components";
@@ -52,6 +53,7 @@ const App = () => {
         <Touch />
         <Go />
         <Introduce />
+        <Prices />
         <BackToTop isMobile={isMobile} />
       </main>
       <Footer />

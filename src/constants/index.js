@@ -9,6 +9,8 @@ export const navLinks = [
   },
 ];
 
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
 export const features = [
   {
     title: "A masszázs lényege...",
@@ -28,6 +30,8 @@ export const features = [
   },
 ];
 
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
 export const essential = {
   title: "Mi a japán arcfiatalító masszázs lényege?",
   description: [
@@ -36,6 +40,8 @@ export const essential = {
   ],
 };
 
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
 export const advantage = {
   title: "Milyen előnyökkel jár a japán arcfiatalító kezelés?",
   description: [
@@ -45,6 +51,8 @@ export const advantage = {
   ],
 };
 
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
 export const touch = {
   title: "Az érintés jótékony hatásai",
   items: [
@@ -81,30 +89,73 @@ export const touch = {
   ],
 };
 
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
 export const go = {
   title: "Miért jó számodra, ha “házhoz megy” az arcmasszázs?",
- items: [
-  {
-    subTitle: "Megszokott környezet",
-    description: "Az otthonodban végzett japán fiatalító arckezelés lehetővé teszi számodra, hogy a saját, megszokott környezetedben lazulj el, nem kell külső helyszínhez alkalmazkodnod."
-  },
-  {
-    subTitle: "Nincs utazással járó stressz",
-    description: "Az otthonodba érkező masszőrrel történő találkozás minimalizálja az utazással járó stresszt, nem vonja el a figyelmedet, ezért a kezelésre tudsz összpontosítani."
-  },
-  {
-    subTitle: "Praktikum",
-    description: "Ha az időd be van osztva, az otthoni arcmasszázs kezelés gyors és hatékony módja a pihenésnek és a szépségápolásnak."
-  },
- ]
+  items: [
+    {
+      subTitle: "Megszokott környezet",
+      description:
+        "Az otthonodban végzett japán fiatalító arckezelés lehetővé teszi számodra, hogy a saját, megszokott környezetedben lazulj el, nem kell külső helyszínhez alkalmazkodnod.",
+    },
+    {
+      subTitle: "Nincs utazással járó stressz",
+      description:
+        "Az otthonodba érkező masszőrrel történő találkozás minimalizálja az utazással járó stresszt, nem vonja el a figyelmedet, ezért a kezelésre tudsz összpontosítani.",
+    },
+    {
+      subTitle: "Praktikum",
+      description:
+        "Ha az időd be van osztva, az otthoni arcmasszázs kezelés gyors és hatékony módja a pihenésnek és a szépségápolásnak.",
+    },
+  ],
 };
 
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
 export const introduce = {
   title: "Bemutatkozás",
   description: [
     "Gyermekkorom óta vonzódom a hagyományokhoz és a távol-keleti kultúrához, melyek mindig fontos szerepet játszottak az életemben.",
     "A távol-keleti kultúra sokoldalúsága és a testi-lelki egyensúly fontossága mindig is inspirált.",
     "A keleti filozófiát követve hiszem, hogy az arcmasszázs nemcsak a ráncok simításáról szól, hanem az energiaáramlások egyensúlyba hozásáról és a belső béke megteremtéséről is.",
-    "A szépség és az egészség egyensúlyának megteremtése céljából életem új korszakába léptem, és remélem, hogy veletek is megoszthatom ezt a csodálatos utazást. Köszönöm, hogy velem tartotok!"
+    "A szépség és az egészség egyensúlyának megteremtése céljából életem új korszakába léptem, és remélem, hogy veletek is megoszthatom ezt a csodálatos utazást. Köszönöm, hogy velem tartotok!",
   ],
 };
+
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+import {
+  pricesOneImg,
+  pricesTwoImg,
+  pricesThreeImg,
+  pricesFourImg,
+} from "../assets";
+
+export const prices = [
+  {
+    description: "japán fiatalító arcmasszázs",
+    time: "60 perc",
+    prices: 20000,
+    img: pricesOneImg,
+  },
+  {
+    description: "10 alkalmas japán fiatalító arcmasszázs bérlet",
+    time: "10x60 perc",
+    prices: 170000,
+    img: pricesTwoImg,
+  },
+  {
+    description: "5 alkalmas japán fiatalító arcmasszázs bérlet",
+    time: "5x60 perc",
+    prices: 90000,
+    img: pricesThreeImg,
+  },
+  {
+    description: "Az első kezelés",
+    time: null,
+    prices: 10000,
+    img: pricesFourImg,
+  },
+];

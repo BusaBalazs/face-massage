@@ -6,6 +6,7 @@
 }
 
 .description {
+
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -26,5 +27,9 @@
     justify-content: center;
     align-items: center;
     gap: 5em;
+  }
+
+  .description {
+    width: 50%;
   }
 }
