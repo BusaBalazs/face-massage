@@ -12,11 +12,15 @@ import classes from "./Prices.module.css";
 
 const PriceCard = ({ img, description, time, price }) => {
   return (
-    <motion.div>
-      <div>
-        <img src={img} alt="Illustration of nassage" />
+    <motion.div className={classes}>
+      <div className={classes["card-img-wrapper"]}>
+        <img
+          src={img}
+          alt="Illustration of nassage"
+          className={classes["price-card-img"]}
+        />
       </div>
-      <div>
+      <div className={classes["price-contents"]}>
         <p>{description}</p>
         <p>{time}</p>
         <p>{price}</p>
@@ -25,24 +29,34 @@ const PriceCard = ({ img, description, time, price }) => {
   );
 };
 
-const Prices = () => {
+const Prices = ({ isMobile }) => {
   const delay = (index) => {
     return isMobile ? 0.5 : 0.3 * index;
   };
 
   return (
     <>
-      <section id="price" className={classes["section-wrapper"]}>
-        <ul className={classes["cards-wrapper"]}>
+      <section id="price" className={classes["price-section"]}>
+        <ul className={classes["price-cards-wrapper"]}>
           {prices.map((price, index) => (
-            <li key={index} className={classes["content"]}>
+            <motion.li
+              variants={fadeIn("up", `${delay(index)}`, 0.5)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+              key={index}
+              className={`${
+                classes["card-content-wrapper"]
+              } ${"section-green"}`}
+            >
               <PriceCard
+                delay={delay}
                 img={price.img}
                 description={price.description}
                 time={price.time}
                 price={`${price.prices} ft`}
               />
-            </li>
+            </motion.li>
           ))}
         </ul>
       </section>

@@ -67,9 +67,7 @@ const ContactForm = () => {
     e.preventDefault();
     setloading(true);
 
-    //K3WqHZckTbUWuKpg5
-    //template_f88cect
-    //service_6z22fws
+
     emailjs
       .send(
         import.meta.env.VITE_SERVICE_KEY,
@@ -78,7 +76,7 @@ const ContactForm = () => {
           from_name: form.name,
           to_name: "Busa Balázs",
           from_email: form.email,
-          to_emai: "react.test75@gmail.com",
+          to_email: "react.test75@gmail.com",
           message: form.phone,
         },
         import.meta.env.VITE_EMAIL_KEY

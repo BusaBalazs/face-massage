@@ -53,7 +53,7 @@ const App = () => {
         <Touch />
         <Go />
         <Introduce />
-        <Prices />
+        <Prices isMobile={isMobile}/>
         <BackToTop isMobile={isMobile} />
       </main>
       <Footer />
