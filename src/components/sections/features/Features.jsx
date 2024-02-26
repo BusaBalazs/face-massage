@@ -48,10 +48,9 @@ const Features = ({isMobile}) => {
           {features.map((feature, index) => (
             <li key={index} className={classes["content"]}>
               <FeaturesCard
-                title={feature.title}
-                id={feature.id}
                 index={index}
                 delay={delay(index)}
+                {...feature}
               />
             </li>
           ))}

@@ -52,17 +52,20 @@
     transition: opacity 0.3s ease-out;
   }
 
-  .content-wrapper:hover {
+  .content-wrapper:hover,
+  .content-wrapper:focus {
     width: 235px;
   }
 
-  .content-wrapper:hover .text {
+  .content-wrapper:hover .text, 
+  .content-wrapper:focus .text {
     display: block;
     right: 30px;
     opacity: 1;
   }
 
-  .content-wrapper:hover .callback-img {
+  .content-wrapper:hover .callback-img,
+  .content-wrapper:focus .callback-img {
     opacity: 0;
   }
 }

@@ -13,10 +13,8 @@ const SectionWrapper = (Component, idName) =>
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
         >
-          <span className="hash-span" id={idName}>
-            &nbsp;
-          </span>
-          
+          <span className="hash-span" id={idName}></span>
+
           <Component />
         </motion.section>
       </section>

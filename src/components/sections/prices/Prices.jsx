@@ -51,10 +51,9 @@ const Prices = ({ isMobile }) => {
             >
               <PriceCard
                 delay={delay}
-                img={price.img}
                 description={price.description}
-                time={price.time}
                 price={`${price.prices} ft`}
+                {...price}
               />
             </motion.li>
           ))}
