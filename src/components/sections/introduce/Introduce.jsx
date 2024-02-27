@@ -5,7 +5,7 @@ import { fadeIn } from "../../../utils/motion";
 import SectionWrapper from "../../hoc";
 
 import { introduce } from "../../../constants";
-import { introduceImg } from "../../../assets";
+
 import classes from "./Introduce.module.css";
 //-------------------------------------------------------
 //-------------------------------------------------------
@@ -33,7 +33,7 @@ const Introduce = () => {
             ))}
           </div>
           <motion.img
-            src={introduceImg}
+            src={introduce.introduceImg}
             alt="portre of Simko-Nagy Tamás"
             variants={fadeIn("right", 0.3, 1)}
             className={classes["portre-img"]}

@@ -74,9 +74,9 @@ const ContactForm = () => {
         import.meta.env.VITE_TEMPLATE_KEY,
         {
           from_name: form.name,
-          to_name: "Busa Balázs",
+          to_name: "Simkó-Nagy Tamás",
           from_email: form.email,
-          to_email: "react.test75@gmail.com",
+          to_email: "simko.nagy@gmail.com",
           message: form.phone,
         },
         import.meta.env.VITE_EMAIL_KEY

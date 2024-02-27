@@ -55,7 +55,6 @@
 ---------------------------------------------------------*/
 
 body {
-  width: 100vw;
   font-family: var(--main-font);
   color: var(--white);
 }

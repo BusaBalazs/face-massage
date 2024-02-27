@@ -122,40 +122,36 @@ export const introduce = {
     "A keleti filozófiát követve hiszem, hogy az arcmasszázs nemcsak a ráncok simításáról szól, hanem az energiaáramlások egyensúlyba hozásáról és a belső béke megteremtéséről is.",
     "A szépség és az egészség egyensúlyának megteremtése céljából életem új korszakába léptem, és remélem, hogy veletek is megoszthatom ezt a csodálatos utazást. Köszönöm, hogy velem tartotok!",
   ],
+  introduceImg:
+    "https://res.cloudinary.com/dironarnd/image/upload/v1709039200/Zsele/uanfd5adnxr2x2oqa5w1.jpg",
 };
 
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-import {
-  pricesOneImg,
-  pricesTwoImg,
-  pricesThreeImg,
-  pricesFourImg,
-} from "../assets";
 
 export const prices = [
   {
     description: "japán fiatalító arcmasszázs",
     time: "60 perc",
     prices: 20000,
-    img: pricesOneImg,
+    img: "https://res.cloudinary.com/dironarnd/image/upload/v1709039198/Zsele/pwvh1q5l18bfndzrmowx.jpg",
   },
   {
     description: "10 alkalmas japán fiatalító arcmasszázs bérlet",
     time: "10x60 perc",
     prices: 170000,
-    img: pricesTwoImg,
+    img: "https://res.cloudinary.com/dironarnd/image/upload/v1709039199/Zsele/ff4jgrdd5zuuap5hkn8g.jpg",
   },
   {
     description: "5 alkalmas japán fiatalító arcmasszázs bérlet",
     time: "5x60 perc",
     prices: 90000,
-    img: pricesThreeImg,
+    img: "https://res.cloudinary.com/dironarnd/image/upload/v1709039199/Zsele/cksxaoja23ngfwa0u5gw.jpg",
   },
   {
     description: "Az első kezelés",
     time: null,
     prices: 10000,
-    img: pricesFourImg,
+    img: "https://res.cloudinary.com/dironarnd/image/upload/v1709039199/Zsele/deqmqyslqokvm1wofr5e.jpg",
   },
 ];
