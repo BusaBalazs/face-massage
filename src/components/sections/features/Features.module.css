@@ -13,6 +13,7 @@
   gap: 3em;
 }
 
+
 .card p {
   font-family: var(--secondary-font);
   font-size: var(--font-size-avarage);
@@ -21,8 +22,8 @@
 }
 
 .img-bg {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   margin: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -45,7 +46,7 @@
 }
 
 .link-title {
-  width: 180px;
+  width: 250px;
 }
 
 /* *****************************************************************
