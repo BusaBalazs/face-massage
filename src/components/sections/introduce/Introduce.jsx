@@ -32,12 +32,17 @@ const Introduce = () => {
               </motion.p>
             ))}
           </div>
-          <motion.img
+          <motion.div variants={fadeIn("right", 0.3, 1)} className={classes["portre-wrapper"]}>
+          <img
             src={introduce.introduceImg}
             alt="portre of Simko-Nagy Tamás"
-            variants={fadeIn("right", 0.3, 1)}
+            
             className={classes["portre-img"]}
           />
+          <div className={classes["signature"]}>
+            <img src={introduce.signature} alt="signature" />
+          </div>
+          </motion.div>
         </div>
       </div>
     </div>
