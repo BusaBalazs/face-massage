@@ -114,6 +114,7 @@ export const go = {
 
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
+import { signature } from "../assets";
 export const introduce = {
   title: "Bemutatkozás",
   description: [
@@ -124,6 +125,7 @@ export const introduce = {
   ],
   introduceImg:
     "https://res.cloudinary.com/dironarnd/image/upload/v1709039200/Zsele/uanfd5adnxr2x2oqa5w1.jpg",
+  signature: signature,
 };
 
 //-----------------------------------------------------------------
