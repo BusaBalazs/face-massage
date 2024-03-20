@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={classes["footer-date"]}>
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.facebook.com/profile.php?id=61557164254150" target="_blank">
           <img
             className={classes["social-media-logo"]}
             src={facebook}
