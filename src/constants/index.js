@@ -150,10 +150,4 @@ export const prices = [
     prices: 90000,
     img: "https://res.cloudinary.com/dironarnd/image/upload/v1709039199/Zsele/cksxaoja23ngfwa0u5gw.jpg",
   },
-  {
-    description: "Az első kezelés",
-    time: null,
-    prices: 10000,
-    img: "https://res.cloudinary.com/dironarnd/image/upload/v1709039199/Zsele/deqmqyslqokvm1wofr5e.jpg",
-  },
 ];

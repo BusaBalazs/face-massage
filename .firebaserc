@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "arcmasszazs-b2693",
-    "prod": "arcmasszazs-b2693"
+    "default": "arc-masszazs",
+    "prod": "arc-masszazs"
   },
   "targets": {},
   "etags": {}
