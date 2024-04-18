@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "build:prod": "env-cmd -f .env.local npm run build && firebase deploy -P prod"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
