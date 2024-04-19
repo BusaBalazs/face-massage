@@ -1,8 +1,0 @@
-{
-  "projects": {
-    "default": "arc-masszazs",
-    "prod": "arc-masszazs"
-  },
-  "targets": {},
-  "etags": {}
-}
