@@ -11,7 +11,7 @@ const Hero = () => {
     <section className={classes.hero}>
       <div className={classes["hero-title-wrapper"]}>
         <h2>日本若返りフェイシャルマッサージ</h2>
-        <h1>Japán arcfiatalító masszázs az ön otthonában.</h1>
+        <h1>Japán arcfiatalító masszázs Budapesten az ön otthonában.</h1>
       </div>
       <ContactForm />
     </section>
